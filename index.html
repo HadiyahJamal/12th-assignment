@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Task 1
+        for (var i = 0; i < 10; i++) {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+
+    console.log(`rgb(${r}, ${g}, ${b})`);
+    }
+    //Task 2
+    let hexa="Hexa Color Generator"
+    function hexaColorPicker(){
+        let hex="#" + Math.floor(Math.random() *16777215).toString(16)
+        return(hex)
+    }
+    for(var i=0; i<5; i++){
+        console.log(hexa+hexaColorPicker());
+        
+    }
+    //Task 3
+   
+    for(var i=0; i<=100; i++){
+        if(i % 3===0 && i % 5===0){
+            console.log("FizzBuzz");
+        }
+         else if(i % 3===0){
+            console.log("Fizz");
+         }
+         else if(i % 5===0){
+            console.log("Buzz");
+         }
+         else{console.log(i);
+        }
+    }
+    let sum=0
+    for(var i=0 ; i<=100 ; i++){
+        if(i % 5===0){
+            sum +=i
+        }
+    }
+    console.log("Sum of multiples of 5 between 1 and 100 is "+sum);
+    
+
+      
+
+    </script>
+
+</body>
+</html>
